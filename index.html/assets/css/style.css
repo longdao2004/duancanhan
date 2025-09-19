@@ -83,11 +83,11 @@ html {
     width: 33.33333%;
 }
 
-/* Main */
+/* Main 
 #main {
 
 }
-
+*/
 #header {
    height: 46px;
    background-color: #000;
@@ -215,11 +215,11 @@ html {
     margin-top: 25px;
 }
 
-
+/*
 #content {
     
 }
-
+*/
 #content .content-section {
     width: 800px;
     max-width: 100%;
