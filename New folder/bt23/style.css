@@ -1,0 +1,148 @@
+body, section, footer, aside, nav, article, figure, figcaption {
+    display: block;
+}
+
+body{
+    color: red;
+    background-color: #f9f8f6;
+    background-image: url("img/dark-wood.jpg");
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4em;
+    margin: 0px;            
+}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+    border: 2px solid #000;
+}
+
+header {
+    height: 160px;
+    background-image: url("img/header-banner.jpg");
+}
+
+ h1 {
+    text-indent: -9999px; 
+    width: 940px;
+    height: 130px;
+    margin: 0;
+    color: red;
+} 
+
+nav, footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #aeaca8;
+}
+
+nav ul {
+    margin: 0;
+    padding: 5px 0 5px 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav li a {
+    color: #ffffff
+}
+
+nav li a:hover {
+    color: #000000;
+}
+
+nav li a.curent {
+    color: #000;
+}
+
+a {
+    color: #de6581;
+    text-decoration: none;
+}
+
+section.courses {
+    float: left;
+    width: 659px;
+    border-right: 1px solid #eeeeee;
+}
+
+article {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+hgroup {
+    margin-top: 40px;
+}
+
+figure {
+    float: left;
+    width: 220px;
+    height: 220px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #eeeeee;
+}
+
+figure img {
+    width: 220px;
+    height: 220px;
+}
+
+figcaption {
+    font-size: 90%;
+    text-align: left;
+}
+
+aside {
+    width: 220px;
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+    color: #985d6a;
+    background-color: #efefef;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    margin: 10px 0 5px 0;
+    padding: 0px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    color: #de6581;
+}
+
+aside h2 {
+    padding: 30px 0px 10px 0px;
+    color: #de6581;
+}
+footer{
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;
+    height: 50px;
+}
+p {
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+}

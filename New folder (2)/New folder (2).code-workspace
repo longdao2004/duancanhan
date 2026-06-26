@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../json_server"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "New folder (2)"
+	}
+}

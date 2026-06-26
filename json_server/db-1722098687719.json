@@ -1,0 +1,12 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Lập Trình JavaScript Cơ Bản",
+      "description": "Lập Trình JavaScript Cơ Bản là khóa học dành cho những người mới"
+    },
+    {
+      "id": "44b8"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+8
+
+https://www.msn.com/
+https://www.msn.com/homepage/service-worker.js?bundles=latest
+true
+{3b22aa43-e297-402d-bacd-8504f2ec650c}
+0
+1719419251267657
+1719419251276150
+1719419212222061
+#

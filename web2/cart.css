@@ -1,0 +1,66 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Bảng giỏ hàng */
+.cart-table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header của bảng */
+.cart-table thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Dòng trong bảng */
+.cart-table tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Các nút xóa */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng nút xóa khi hover */
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Tổng tiền */
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}

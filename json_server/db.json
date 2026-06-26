@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Lập Trình JavaScript Cơ Bản",
+      "description": "Lập Trình JavaScript Cơ Bản là khóa học dành cho những người mới"
+    },
+    {
+      "name": "Lập Trình JavaScript Nâng Cao",
+      "description": "Hiểu sâu hơn về cách Javascript hoạt động, tìm hiểu về IIFE, closure, reference types, this keyword, bind, call, apply, prototype",
+      "id": 2
+    }
+  ]
+}

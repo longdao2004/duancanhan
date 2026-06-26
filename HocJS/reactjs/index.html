@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="app5.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+</head>
+<body>
+    <h1>Add React to website</h1>
+    <script>
+        // Tao H1
+        //React.createElement()
+        // dom
+        const h1DOM = document.createElement('h1')
+        h1DOM.title = 'Hello React'
+        h1DOM.className = 'heading'
+        h1DOM.innerText = 'Hello React'
+        document.body.appendChild(h1DOM)
+
+        // React
+        // React.createElement(type, props, ...children)
+        const h1React = React.createElement('h1', {
+            title: 'hello long',
+            className: 'heading',
+        }, 'hello react')
+
+        console.dir(h1DOM);
+        console.log(h1React);
+
+        // Tao Ul
+        // DOM
+        const ulDOM = document.createElement('ul');
+        ulDOM.is = 'ul-id';
+        ulDOM.style.color = 'red';
+        ulDOM.style.fontSize = '20px';
+        const liDOM1 = document.createElement('li');
+        liDOM1innerText = 'Hello React';
+        const liDOM2 = document.createElement('li');
+        liDOM2.innerText = 'Hello React 2';
+        ulDOM.appendChild(liDOM1);
+        ulDOM.appendChild(liDOM2);
+        document.body.appendChild(ulDOM);
+       
+        // React
+        const ulReact = React.createElement(
+            'ul',
+            {
+                id: 'ul-id',
+                style: {
+                    color: 'red',
+                    fontSize: '20px'
+                }
+            },
+            React.createElement('li', {id: 'li-1'}, 'Hello React'),
+            React.createElement('li', null, 'Hello React long')
+        );
+
+        //console.log(ulReact);
+
+        // tao div
+        const divReact = React.createElement(
+            'div', 
+            {
+                id: 'div-id',
+                className: 'post-item',
+                style: {
+                    color: 'blue',
+                    fontSize: '30px'
+                }
+            },
+            React.createElement('h1', { title: 'Học react tại F8'}, 'Học React tại F8'),
+            React.createElement('p', null, 'Học React từ cơ bản đến nâng cao')
+        );
+        console.log(divReact);
+    </script>
+</body>
+</html>

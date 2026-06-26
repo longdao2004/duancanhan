@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Liên hệ</h2>
+        <p>Vui lòng điền đầy đủ các thông tin vào ô dưới đây và
+            gửi liện hệ cho chúng tôi hoặc gọi vào số hotline:
+            <font size="3" color="red">024.6261.7258</font>
+        </p>
+        <form action="" id="contactForm">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name">
+                <div id="nameError" class="error-message">Trường này bắt buộc</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div id="emailError" class="error-message">Trường này bắt buộc</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="phone" id="phone" name="phone">
+                <div id="phoneError" class="error-message">Trường này bắt buộc</div>
+            </div>
+            <div class="form-group">
+                <label for="message">Nội dung:</label>
+                <textarea id="message" name="message"></textarea>
+                <div id="messageError" class="error-message">Trường này bắt buộc</div>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Gửi
+                </button>
+                <button type="button" id="clearBtn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    Xóa Trắng
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

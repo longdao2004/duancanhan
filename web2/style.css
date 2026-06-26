@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #4d4d4d;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+    height: 60px;
+}
+
+/* Danh sách bên trong nav */
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo ở bên trái */
+nav li:first-child {
+    margin-right: auto; /* Đẩy logo sang bên trái */
+}
+
+/* Căn chỉnh các mục còn lại */
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Ảnh logo */
+nav li img {
+    width: 50px; /* Kích thước logo */
+    height: auto;
+}
+
+/* Nút tìm kiếm */
+form input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+}
+
+/* Link menu */
+nav a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Hover link */
+nav a:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.logo-web img{
+    width: fit-content;
+    height: 70px;
+}
+
+.button-container {
+    display: flex;
+    background-color: rgba(0, 73, 144);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(0, 73, 144, 0.5) 5px 10px 15px;
+    transition: all 0.5s;
+  }
+  .button-container:hover {
+    width: 300px;
+    transition: all 0.5s;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+
+.order-container {
+    width: 500px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product-image {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-quantity button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-quantity button:hover {
+    background-color: #0056b3;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-info, .delivery-method, .invoice, .discount, .total-price, .terms {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.total-price {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.total-price span {
+    color: red;
+}
+
+.btn-order {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.color {
+    font-weight: bold;
+    color: #e83e8c;
+}

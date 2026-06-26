@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Form 1-->
+    <form action="login.php" method="post">
+        <table border="1">
+            <tr>
+                <td colspan="2">Sign In</td>
+            </tr>
+            <tr>
+                <td>Email address</td>
+                <td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Sign in" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!--form 2-->
+    <form action="signin.php" method="post">
+        <table border="1">
+            <tr>
+                <td colspan="2" bgcolor="yellow"><h1>Registration form</h1></td>
+            </tr>
+            <tr>
+                <td> Enter name </td>
+                <td> <input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td> Enter Password </td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td> Enter Address </td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td> Select Game </td>
+                <td>
+                    <input type="checkbox" id="hockey" name="game"/>
+                    <label for="hockey">Hockey</label> <br/>
+                    <input type="checkbox" id="football" name="game"/>
+                    <label for="football">Football</label> <br/>
+                    <input type="checkbox" id="badminton" name="game"/>
+                    <label for="badminton">Badminton</label> <br/>
+                    <input type="checkbox" id="cricket" name="game"/>
+                    <label for="cricket">Cricket</label> <br/>
+                    <input type="checkbox" id="volleyball" name="game"/>
+                    <label for="volleyball">Volleyball</label> <br/>
+                </td>
+            </tr>
+            <tr>
+                <td> Gender </td>
+                <td>
+                    <input type="radio" id="male" name="gender"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"/>
+                    <label for="female">Fmale</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Age </td>
+                <td>
+                    <select name="age">
+                        <option value="18">18</option>
+                        <option value="18">19</option>
+                        <option value="18">20</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Avatar </td>
+                <td>
+                    <input type="file" name="avatar"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Click me" />
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!--Form 3-->
+    <form action="contact.php" method="post">
+        <table border="1">
+            <tr>
+                <td bgcolor="yellow">
+                    <h1>CONTACT US</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fullname" placeholder="Enter Name" maxlength="20" minlength="10" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="Enter Email" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" name="phonenumber" placeholder="Enter Phone Number" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="age" placeholder="Enter Age" min="1" max="100" step="1"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" name="date" placeholder="Enter Date" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea placeholder="Message" name="message" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Send"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+           
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="JavaScript">
+        function xuly() {
+            ip = document.getElementById("fullname");
+            div = document.getElementById("content");
+            // là một thuộc tính của các phần tử HTML trong JavaScript. Nó được sử dụng để lấy hoặc thiết lập nội dung văn bản bên trong một phần tử HTML.
+            div.innerText = "Xin chào: " + ip.value;
+        }
+    </script>
+
+</head>
+
+<body>
+    Nhập vào tên của bạn: <input type="text" id="fullname" onkeyup="xuly()"/>
+    <div id="content">Xin chào: </div>
+</body>
+
+</html>

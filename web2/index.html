@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="category-item">
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/020/489/292/small_2x/3d-logo-of-apple-iphone-free-png.png" alt=""></a>
+            </li>
+            <form action="">
+                <input type="text" placeholder="Tìm kiếm">
+            </form>
+            <li class="category-item">
+                <a href="#">iPhone</a>
+            </li>
+            <li class="category-item">
+                <a href="#">iPad</a>
+            </li>
+            <li class="category-item">
+                <a href="#">Mac</a>
+            </li>
+            <li class="category-item">
+                <a href="#">Dịch vụ</a>
+            </li>
+            <li class="category-item">
+                <a href="#">Liên hệ</a>
+            </li>
+
+            <li class="category-item">
+                <button class="button">
+                    <svg
+                      class="icon"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="9" cy="21" r="1"></circle>
+                      <circle cx="20" cy="21" r="1"></circle>
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      ></path>
+                    </svg>
+                </button>
+            </li>
+            <li class="category-item">
+                <a href="#">Đăng nhập/Đăng ký</a>
+            </li>
+
+            
+        </ul>
+    </nav>
+
+    <div class="order-container">
+        <h2>iPhone 16 128GB</h2>
+        <p>Màu sắc: <span class="color">Hồng</span></p>
+        <div class="product">
+            <img src="img/0029121_hong_550.jpeg" alt="iPhone 16" class="product-image">
+            <div class="product-quantity">
+                <button class="btn-decrease">-</button>
+                <input type="number" value="1" min="1">
+                <button class="btn-increase">+</button>
+            </div>
+            <p class="product-price">21.990.000đ</p>
+        </div>
+        <div class="customer-info">
+            <h3>Thông tin khách hàng</h3>
+            <label><input type="radio" name="gender" value="male" checked> Anh</label>
+            <label><input type="radio" name="gender" value="female"> Chị</label>
+            <div class="form-group">
+                <input type="text" placeholder="Họ và Tên">
+                <input type="text" placeholder="Số điện thoại">
+            </div>
+        </div>
+        <div class="delivery-method">
+            <h3>Hình thức nhận hàng</h3>
+            <label><input type="radio" name="delivery" value="delivery" checked> Giao tận nơi</label>
+            <label><input type="radio" name="delivery" value="store"> Nhận tại cửa hàng</label>
+            <div class="form-group">
+                <select>
+                    <option>Chọn tỉnh, thành phố</option>
+                    <option>Hà Nội</option>
+                    <option>TP.HCM</option>
+                </select>
+                <input type="text" placeholder="Địa chỉ cụ thể">
+            </div>
+            <textarea placeholder="Nhập ghi chú (nếu có)"></textarea>
+        </div>
+        <div class="invoice">
+            <label><input type="checkbox"> Xuất hóa đơn công ty</label>
+        </div>
+        <div class="discount">
+            <h3>Sử dụng mã giảm giá</h3>
+        </div>
+        <div class="total-price">
+            <p>Tổng tiền: <span>21.990.000đ</span></p>
+        </div>
+        <div class="terms">
+            <label>
+                <input type="checkbox" checked>
+                Tôi đã đọc và đồng ý với điều khoản và điều kiện của website
+            </label>
+        </div>
+        <button class="btn-order">Tiến hành đặt hàng</button>
+    </div>
+
+    
+
+    <script>
+        const orderButton = document.querySelector('.btn-order');
+
+// Gắn sự kiện click cho nút "Tiến hành đặt hàng"
+        orderButton.addEventListener('click', () => {
+    // Lấy thông tin từ các trường nhập liệu
+        const customerName = document.querySelector('.customer-info input[placeholder="Họ và Tên"]').value.trim();
+        const customerPhone = document.querySelector('.customer-info input[placeholder="Số điện thoại"]').value.trim();
+        const address = document.querySelector('.delivery-method input[placeholder="Địa chỉ cụ thể"]').value.trim();
+        const termsChecked = document.querySelector('.terms input[type="checkbox"]').checked;
+
+    // Kiểm tra thông tin đầu vào
+        if (!customerName || !customerPhone || !address) {
+            alert('Vui lòng điền đầy đủ thông tin khách hàng và địa chỉ giao hàng!');
+        return;
+        }
+
+        if (!termsChecked) {
+            alert('Bạn cần đồng ý với điều khoản và điều kiện của website trước khi đặt hàng!');
+        return;
+        }
+
+    // Hiển thị thông báo đặt hàng thành công
+        alert('Đặt hàng thành công! Cảm ơn bạn đã mua hàng.');
+        });
+
+    </script>
+    
+</body>
+</html>
